@@ -83,16 +83,8 @@ nav a {
 	color: black;*/
 }
 
-#mheader_mobile {
+#header_mobile {
 	display: none;
-}
-
-@media only screen and (max-width: 480px) {
-	#header_desktop {
-		display: none;
-	}
-
-
 }
 
 /* --- BANNER SECTION --- */
@@ -152,6 +144,10 @@ nav a {
 	max-height: auto;
 }
 
+.presentation_img_mobile {
+	display: none;
+}
+
 .readmore_button {
 	display: flex;
 	justify-content: center;
@@ -181,6 +177,10 @@ nav a {
 	padding: 0.5rem 1.5rem;
 } 
 */
+
+.readmore {
+	color: royalblue;
+}
 
 #presentation {
 	padding-bottom: 32px;
@@ -348,4 +348,122 @@ video {
 
 #legal a {
 	padding: 1.5rem;
+}
+
+/* --- MEDIA QUERIES --- */
+
+@media only screen and (max-width: 640px) {
+	#header_desktop {
+		display: none;
+	}
+
+	#header_mobile {
+		display: flex;
+	}
+
+ 	#banner {
+ 		flex-direction: column;
+ 		justify-content: center;
+ 	}
+
+ 	#banner_left {
+ 		width: 100%;
+ 		padding: 0rem;
+ 	}
+
+ 	#banner_right {
+ 		width: 100%;
+ 		padding: 0rem 1rem 2rem 1rem;
+ 	}
+
+ 	#presentation_left {
+ 		display: none;
+ 	}
+
+ 	#presentation_right {
+ 		width: 100%;
+ 	}
+
+ 	#orientation, 
+ 	#campus, 
+ 	#lecture {
+ 		flex-direction: column;
+ 	}
+
+	#presentation_left {
+		flex-direction: column;
+		width: 100%;
+		padding: 0rem;
+	}
+
+	#orientation_left,
+	#campus_left,
+	#lecture_left {
+		padding: 1rem;
+		width: 95%;
+	}
+
+	#orientation_right,
+	#campus_right,
+	#lecture_right {
+		padding: 1rem;
+		width: 100%;
+	}
+
+ 	.presentation_img {
+ 		display: none;
+ 	}
+
+ 	.presentation_img_mobile {
+ 		display: inline-block;
+ 		max-width: 100%
+ 	}
+
+ 	#courses {
+ 		background-color: white;
+ 	}
+
+ 	.course_box {
+ 		width: 100%;
+ 	}
+
+ 	.course_box > img,
+ 	.course_box > div > p {
+ 		display: none;
+ 	}
+
+ 	.course_box > div > h4 {
+ 		max-width: 100%;
+ 		background: lightgrey;
+ 		padding: 2rem;
+ 	}
+
+ 	#courses {
+ 		padding: 1rem;
+ 		width: 95%;
+ 		margin-right: 1rem;
+ 	}
+
+ 	#courselist_top,
+ 	#courselist_bottom {
+ 		flex-direction: column;
+ 		padding: 0rem;
+ 	}
+
+ 	#thesis_left {
+ 		width: 100%;
+ 	}
+
+ 	#thesistxt_box {
+ 		display: none;
+ 	}
+
+ 	#thesis_right {
+ 		display: none;
+ 	}
+
+ 	#legal {
+ 		display: none;
+ 	}
+
 }
