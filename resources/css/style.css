@@ -63,8 +63,9 @@ a {
 
 #logotxt_bold {
 	display: inline-block;
-	font-size: : 2rem;
-	line-height: 2.5rem;
+	font-size: : 2rem !important;
+	line-height: 2.5rem !important;
+	font-weight: bold !important;
 }
 
 #logotxt_light {
@@ -201,6 +202,7 @@ nav a {
 	flex-direction: column;
 	width: 40%;
 	justify-content: center;
+	border-left: 1px solid lightgray;
 }
 
 #orientation_left {
@@ -344,6 +346,7 @@ video {
 #footer {
 	justify-content: space-between;
 	padding: 1.5rem;
+	border-top: 1px solid grey;
 }
 
 #legal a {
