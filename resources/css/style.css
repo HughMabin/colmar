@@ -250,6 +250,10 @@ nav a {
 
 /* --- THESIS SECTION --- */
 
+#thesis_section {
+	padding-bottom: 2rem;
+}
+
 #thesis_heading {
 	padding: 2rem;
 	text-align: center;
@@ -304,7 +308,7 @@ footer {
 }
 
 #legal a {
-	padding: 1.5rem;
+	padding: 0 1.5rem;
 }
 
 /* --- MEDIA QUERIES --- */
