@@ -460,6 +460,7 @@ video {
  	#courselist_bottom {
  		flex-direction: column;
  		padding: 0rem;
+ 		margin: inherit, auto;
  	}
 
  	#thesis_left {
@@ -468,6 +469,7 @@ video {
 
  	#thesistxt_box {
  		display: none;
+ 		padding: 0;
  	}
 
  	#thesis_right {
